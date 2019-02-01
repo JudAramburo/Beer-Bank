@@ -1,0 +1,53 @@
+<div class="modal-header" style="border: 0px;">
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')" style="padding: 10px 15px;">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body" style="padding-top: 0px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <img src={{beer.image_url}} alt={{beer.name}} class="">
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <h3 class="card-title">{{beer.name}}</h3>
+            <h6 class="card-subtitle mb-2">{{beer.tagline}}</h6>
+            <hr width="20%">
+          </div>
+        </div>
+        <div class="row rowDialog">
+          <div class="col">
+            <strong>IBU: </strong> {{beer.ibu}} <strong>ABV: </strong> {{beer.abv}}% <strong>EBC: </strong>{{beer.ebc}}
+          </div>
+        </div>
+        <div class="row rowDialog">
+          <div class="col">
+            {{beer.description}}
+          </div>
+        </div>
+        <div class="row rowDialog">
+          <div class="col">
+            <strong>Best served with:</strong>
+            <ul>
+              <li *ngFor="let item of beer.food_pairing">{{item}}</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="row">
+        <div class="col">
+          <h4 class="card-title" style="padding-left: 15px;">You might also like</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+    </div>
+  </div>

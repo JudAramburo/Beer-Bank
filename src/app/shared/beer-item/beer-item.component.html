@@ -1,0 +1,12 @@
+<div class="card card__one" (click)="open()">
+  <div class="card-body text-center">
+    <img src={{beer.fav}} alt="fav" class="float-right star" (click)="clickFavorite($event, beer.id)">
+    <img src={{beer.image_url}} alt={{beer.name}}>
+    <h5 class="card-title">{{beer.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{beer.tagline}}</h6>
+  </div>
+</div>
+
+<!--  ng-click="clickFavorite(beer.id)"
+  onmouseover="this.src='../../../assets/img/star-click.png'"
+      onmouseout="this.src='../../../assets/img/star.png'" -->

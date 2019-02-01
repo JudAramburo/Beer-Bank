@@ -1,0 +1,17 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/*GENERALS*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+nav {
+  background-color: #f79400;
+  /*height: 30px;*/
+}

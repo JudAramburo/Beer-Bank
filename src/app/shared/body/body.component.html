@@ -1,0 +1,6 @@
+<div class="container container-body">
+  <div class="grid" infiniteScroll [infiniteScrollDistance]="0.01" [infiniteScrollThrottle]="500" (scrolled)="onScroll()">
+    <app-beer-item *ngFor="let beer of beers" [beer]="beer" (changeFav)="onChangeFav($event)">
+    </app-beer-item>
+  </div>
+</div>

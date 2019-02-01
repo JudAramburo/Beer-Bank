@@ -1,0 +1,12 @@
+<header>
+  <div class="container fixed-width text-center">
+    <h2>The Beer Bank</h2>
+    <h4>Find your favourite beer here</h4>
+    <input #box (keyup.enter)="onEnter(box.value)" class="form-control form-control-lg" placeholder="Search for beer name">
+    <a [routerLink]="['/advancedsearch']">
+      Advanced Search
+    </a>
+  </div>
+</header>
+
+<app-body [component]=component></app-body>

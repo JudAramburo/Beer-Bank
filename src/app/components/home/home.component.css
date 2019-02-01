@@ -1,0 +1,15 @@
+header {
+  background-color: #f79400;
+  color: white;
+  padding-bottom: 50px;
+}
+
+a {
+  width: 100%;
+  text-align: right !important;
+  color: white;
+}
+
+a:hover {
+  color: #141414;
+}

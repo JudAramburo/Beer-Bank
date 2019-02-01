@@ -1,0 +1,21 @@
+<header>
+
+  <div class="row" style="margin-bottom: 30px">
+    <div class="col text-center">
+      <h2>Advanced Search</h2>
+    </div>
+  </div>
+
+  <app-sliderange [name]="name_abv" (onFilterChange)="onActivateFilter($event)" (onRangeChange)="onRangeChange($event)"></app-sliderange>
+  <app-sliderange [name]="name_ebc" (onFilterChange)="onActivateFilter($event)" (onRangeChange)="onRangeChange($event)"></app-sliderange>
+  <app-sliderange [name]="name_ibu" (onFilterChange)="onActivateFilter($event)" (onRangeChange)="onRangeChange($event)"></app-sliderange>
+
+  <div class="row">
+    <div class="col-md-2 offset-md-9">
+      <button type="button" class="btn btn-primary btn-block">Search</button>
+    </div>
+  </div>
+
+</header>
+
+<app-body [component]=component></app-body>
